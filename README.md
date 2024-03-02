@@ -21,13 +21,21 @@ The Scribble application is such that the home route or page contains a text fie
 
 ## Knowledge Check
 
-The words 'GET' and 'POST' are used frequently in the course of this project. Here are what they mean:
+The words 'GET' and 'POST' are used frequently in the course of this project. Here is what they mean:
 
-GET - refers to requests used to retrieve data from a system. In this case, the GET request is expected to respond to the user who inputted the url by loading the note taking page
+**GET** refers to requests used to retrieve data from a system. In this case, the GET request is expected to respond to the user who inputted the URL by loading the note-taking page.
 
-POST - refers to requests used to submit data to be processed, in this case - the notes/scribbles is the data, clicking in the add note button by the user initiates a POST request
+**POST** refers to requests used to submit data to be processed; in this case, the notes or scribbles are the data. Clicking on the add note button by the user initiates a POST request.
 
 You can find the comprehensive report of this project here.
+
+## Objectives
+
+- The objectives for this project are twofold, namely:
+ 
+- To refactor the existing codebase and ensure the proper functioning of the note-taking application,
+
+- Document all identified bugs during the debugging process.
 
 
 # Workflow
@@ -130,5 +138,9 @@ I added some features that extend the functionality of the Scribble app, namely:
 
 ## Conclusion
 
+![Conclusion](https://github.com/HannahIgboke/Code-Refactoring-and-Bug-Fixing-for-Scribble/blob/main/Files/Images/Conclusion.jpg)
 
+This project uses HTTP request methods to connect to data sources like APIs or web servers, enabling data retrieval, submission, and updating. These interactions are essential for data collection, preprocessing, and analysis workflows in data science.
+
+By refactoring the flask route, I was able to resolve the mismatch in the route methods used, include the GET method to allow us access the page, specify the needed action in the html file, and handle the data retrieval issues. The app now functions as intended. The app's features were also extended for an improved user experience.
 

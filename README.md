@@ -27,7 +27,9 @@ The words 'GET' and 'POST' are used frequently in the course of this project. He
 
 **POST** refers to requests used to submit data to be processed; in this case, the notes or scribbles are the data. Clicking on the add note button by the user initiates a POST request.
 
-You can find the comprehensive report of this project here.
+
+
+You can find the concise report of this project [here](https://github.com/HannahIgboke/Code-Refactoring-and-Bug-Fixing-for-Scribble/blob/main/Report%20on%20code%20refactoring%20and%20bug%20fixing%20for%20Scribble%20app.pdf).
 
 ## Objectives
 

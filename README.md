@@ -31,18 +31,19 @@ You can find the comprehensive report of this project here.
 
 ## Objectives
 
-- The objectives for this project are twofold, namely:
+The objectives for this project are twofold, namely:
  
 - To refactor the existing codebase and ensure the proper functioning of the note-taking application,
 
 - Document all identified bugs during the debugging process.
 
 
-# Workflow
+# Workflow🤹‍♀️
 
 ## Create a virtual environment to install flask and activate the environment
 
-First, using visual studio code, I created a virtual environment called '.env_flask_scribble' on which to install the flask framework. Thereafter, I activated the environment for use.
+First, using Visual Studio code, I created a virtual environment called '.env_flask_scribble' on which to install the flask framework. Thereafter, I activated the environment for use.
+
 ![virtual environmnet](https://github.com/HannahIgboke/Code-Refactoring-and-Bug-Fixing-for-Scribble/blob/main/Files/Images/Virtual%20envrionment%20and%20activation.JPG)
 
 
@@ -56,7 +57,7 @@ The flask installation was successful.
 
 ## Run the initial codebase
 
-When I ran the code base a 405 error occured.
+When I ran the codebase a 405 error occured.
 
 ![Client error](https://github.com/HannahIgboke/Code-Refactoring-and-Bug-Fixing-for-Scribble/blob/main/Files/Images/Client%20error.JPG)
 
@@ -65,14 +66,12 @@ When I ran the code base a 405 error occured.
 
 1. Route method mismatch
 
-The route in the Python code is setup to only handle POST requests.
-
-Based on the app's functionality, we need to first be able to access the page (i.e., get data from it), but the ‘GET’ method has not been defined here. This leads to the method error when the app is run.
+The route in the Python code is setup to only handle POST requests. Also, based on the app's functionality, we need to first be able to access the page (i.e., get data from it), but the ‘GET’ method has not been defined here. This leads to the method error when the app is run.
 
 ![Bug 1 - python](https://github.com/HannahIgboke/Code-Refactoring-and-Bug-Fixing-for-Scribble/blob/main/Files/Images/Bug%201%20-%20python.JPG)
 
 
-The HTML code contains no corresponding method, which sets it to the default method of ‘GET’, resulting in the data not being sent to the server correctly.
+On the other hand, the HTML code contains no corresponding method, which sets it to the default method of ‘GET’, resulting in the data not being sent to the server correctly.
 
 ![Bug 1 - html](https://github.com/HannahIgboke/Code-Refactoring-and-Bug-Fixing-for-Scribble/blob/main/Files/Images/Bug%201%20-%20html.JPG)
 
@@ -99,7 +98,7 @@ Here, after entering a note, the user cannot see his or her notes as the applica
 
 ### Bug fix
 
-The issue here is that the Python code cannot correctly retrieve the notes already submitted via the form. This is because the note variable is stored using request.args.get("note"), which matches a GET request. We ought to use request.form.get() for POST requests, as form data is usually accessed this way to match the POST request in the HTML code.
+The issue here is that the Python code cannot correctly retrieve the notes already submitted via the form. This is because the note variable is stored using `request.args.get("note")`, which matches a GET request. We ought to use `request.form.get()` for POST requests, as form data is usually accessed this way to match the POST request in the HTML code.
 
 Previous code:
 
@@ -120,6 +119,9 @@ In this application, the form is intended to submit the data to the root URL (�
 ### Bug fix
 
 ![Bug fix](https://github.com/HannahIgboke/Code-Refactoring-and-Bug-Fixing-for-Scribble/blob/main/Files/Images/Bug%20fix%203.JPG)
+
+
+All bugs are fixed ✅.
 
 
 ## Add-ons

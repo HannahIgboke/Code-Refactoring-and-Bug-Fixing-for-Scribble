@@ -103,4 +103,32 @@ Corrected code:
 ![Bug fix 2](https://github.com/HannahIgboke/Code-Refactoring-and-Bug-Fixing-for-Scribble/blob/main/Files/Images/Bug%20fix%202.JPG)
 
 
+3. No action is specified
+
+In this application, the form is intended to submit the data to the root URL (‘/’) when the user adds a new note. Since it wasn’t stated in the action attribute, the form data was not sent to the correct route (which is the homepage, so they could see previous notes they had made) for processing, and since it wasn't processed, we ended up with ‘None’ instead of the notes we entered.
+
+![Bug 3](https://github.com/HannahIgboke/Code-Refactoring-and-Bug-Fixing-for-Scribble/blob/main/Files/Images/Bug%203.JPG)
+
+### Bug fix
+
+![Bug fix](https://github.com/HannahIgboke/Code-Refactoring-and-Bug-Fixing-for-Scribble/blob/main/Files/Images/Bug%20fix%203.JPG)
+
+
+## Add-ons
+
+I added some features that extend the functionality of the Scribble app, namely:
+
+- Users can edit already-created notes.
+
+- The ‘Enter note’ field is wider to enable users to have an enhanced view of their notes as they type.
+
+
+## Final output
+
+![Final output](https://github.com/HannahIgboke/Code-Refactoring-and-Bug-Fixing-for-Scribble/blob/main/Files/Images/Final%20output.JPG)
+
+
+## Conclusion
+
+
 

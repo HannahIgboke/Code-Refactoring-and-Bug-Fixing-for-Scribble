@@ -27,6 +27,30 @@ GET - refers to requests used to retrieve data from a system. In this case, the 
 
 POST - refers to requests used to submit data to be processed, in this case - the notes/scribbles is the data, clicking in the add note button by the user initiates a POST request
 
+You can find the comprehensive report of this project here.
+
+
+# Workflow
+
+## Create a virtual environment to install flask and activate the environment
+
+First, using visual studio code, I created a virtual environment called '.env_flask_scribble' on which to install the flask framework. Thereafter, I activated the environment for use.
+![virtual environmnet](https://github.com/HannahIgboke/Code-Refactoring-and-Bug-Fixing-for-Scribble/blob/main/Files/Images/Virtual%20envrionment%20and%20activation.JPG)
+
+
+
+## Install flask
+
+The flask installation was successful.
+
+![Installation](https://github.com/HannahIgboke/Code-Refactoring-and-Bug-Fixing-for-Scribble/blob/main/Files/Images/Installed%20flask.JPG)
+
+
+## Run the initial codebase
+
+When I ran the code base a 405 error occured.
+
+![Client error](https://github.com/HannahIgboke/Code-Refactoring-and-Bug-Fixing-for-Scribble/blob/main/Files/Images/Client%20error.JPG)
 
 
 ## Issues/bugs 🐛 identified

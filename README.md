@@ -71,7 +71,14 @@ The HTML code contains no corresponding method, which sets it to the default met
 
 ### Bug fix
 
-The 'POST' method is included in the HTML code, and the 'GET' method is included as well in the Python code. This resolves the 405 error.
+The 'POST' method is included in the HTML code, 
+
+![Bug fix - html](https://github.com/HannahIgboke/Code-Refactoring-and-Bug-Fixing-for-Scribble/blob/main/Files/Images/Bug%203.JPG)
+
+
+And the 'GET' method is included as well in the Python code. This resolves the 405 error.
+
+![Bug fix - python](https://github.com/HannahIgboke/Code-Refactoring-and-Bug-Fixing-for-Scribble/blob/main/Files/Images/Bug%20fix%201%20-%20python.JPG)
 
 
 2. Data retrieval issues
@@ -84,6 +91,16 @@ Here, after entering a note, the user cannot see his or her notes as the applica
 
 ### Bug fix
 
+The issue here is that the Python code cannot correctly retrieve the notes already submitted via the form. This is because the note variable is stored using request.args.get("note"), which matches a GET request. We ought to use request.form.get() for POST requests, as form data is usually accessed this way to match the POST request in the HTML code.
+
+Previous code:
+
+![Bug 2](https://github.com/HannahIgboke/Code-Refactoring-and-Bug-Fixing-for-Scribble/blob/main/Files/Images/Bug%202%20-%20python.JPG)
+
+
+Corrected code:
+
+![Bug fix 2](https://github.com/HannahIgboke/Code-Refactoring-and-Bug-Fixing-for-Scribble/blob/main/Files/Images/Bug%20fix%202.JPG)
 
 
 

@@ -19,5 +19,17 @@ The Scribble application is such that the home route or page contains a text fie
 - Flask
 - HTML
 
+## Knowledge Check
+
+The words 'GET' and 'POST' are used frequently in the course of this project. Here are what they mean:
+
+GET - refers to requests used to retrieve data from a system. In this case, the GET request is expected to respond to the user who inputted the url by loading the note taking page
+
+POST - refers to requests used to submit data to be processed, in this case - the notes/scribbles is the data, clicking in the add note button by the user initiates a POST request
+
+
+
 ## Issues/bugs 🐛 identified
+
+1. Route method mismatch
 

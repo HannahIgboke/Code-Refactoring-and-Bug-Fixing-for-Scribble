@@ -74,6 +74,16 @@ The HTML code contains no corresponding method, which sets it to the default met
 The 'POST' method is included in the HTML code, and the 'GET' method is included as well in the Python code. This resolves the 405 error.
 
 
+2. Data retrieval issues
+
+Now that we have the Python code and the HTML files communicating properly, we have another issue: data retrieval.
+
+Here, after entering a note, the user cannot see his or her notes as the application is expected to work, instead we see ‘None’.
+
+![2nd error](https://github.com/HannahIgboke/Code-Refactoring-and-Bug-Fixing-for-Scribble/blob/main/Files/Images/2nd%20error.JPG)
+
+### Bug fix
+
 
 
 

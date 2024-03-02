@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scribble</title>
+</head>
+<body>
+    <h1>
+        Scribble✍
+    </h1>
+    <form action="/" method = 'POST'>
+        
+        <textarea name="note" placeholder="Enter a note" cols="30" rows="5"></textarea>
+        <br>
+        <button type = 'submit'>Add Note</button>
+    </form>
+
+    <h2>
+        <em>Notes</em>
+    </h2>
+
+    <ul>
+        {% for note_index, note in notes %}
+        <li>
+            {{ note }}
+            <a href = "{{ url_for('edit', note_index = note_index) }}">Edit</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

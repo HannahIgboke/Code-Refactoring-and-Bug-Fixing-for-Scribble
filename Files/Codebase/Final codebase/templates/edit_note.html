@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+</head>
+<body>
+    <h1>
+        Edit note
+    </h1>
+
+    <form action = "{{ url_for('edit', note_index=note_index) }}" method = "POST">
+        <textarea name="edited_note" rows="5" cols="30">{{ note_to_edit}}</textarea>
+        <br>
+        <button type="submit">Save Changes</button>
+    </form>
+</body>
+</html>

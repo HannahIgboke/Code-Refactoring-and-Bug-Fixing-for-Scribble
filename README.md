@@ -57,3 +57,23 @@ When I ran the code base a 405 error occured.
 
 1. Route method mismatch
 
+The route in the Python code is setup to only handle POST requests.
+
+Based on the app's functionality, we need to first be able to access the page (i.e., get data from it), but the ‘GET’ method has not been defined here. This leads to the method error when the app is run.
+
+![Bug 1 - python](https://github.com/HannahIgboke/Code-Refactoring-and-Bug-Fixing-for-Scribble/blob/main/Files/Images/Bug%201%20-%20python.JPG)
+
+
+The HTML code contains no corresponding method, which sets it to the default method of ‘GET’, resulting in the data not being sent to the server correctly.
+
+![Bug 1 - html](https://github.com/HannahIgboke/Code-Refactoring-and-Bug-Fixing-for-Scribble/blob/main/Files/Images/Bug%201%20-%20html.JPG)
+
+
+### Bug fix
+
+The 'POST' method is included in the HTML code, and the 'GET' method is included as well in the Python code. This resolves the 405 error.
+
+
+
+
+
